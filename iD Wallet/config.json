@@ -1,0 +1,65 @@
+﻿{
+  "firstStart": true,
+  "passList": [
+    {
+      "ID": "fd063fa5fe206a27d21a76caba6d66695680de3c",
+      "type": "eventTicket",
+      "background": "rgb(247,149,0)",
+      "foreground": "rgb(255,255,255)",
+      "label": "rgb(255,255,255)",
+      "headerLogo": "ms-appx:///passImages/pass-1-logo.png",
+      "headerLogoWidth": 106,
+      "headerLogoHeight": 36,
+      "organizationName": "Eventick Reservas Online Ltda. - ME.",
+      "description": "Eventick passbook ticket",
+      "headerLogoText": "",
+      "headerLabel": "10:00",
+      "headerValue": "09 de Abril"
+    },
+    {
+      "ID": "8dbedc9dbd63fecea349346d07731243b83d1bb5",
+      "type": "boardingPass",
+      "background": "rgb(76,163,213)",
+      "foreground": "rgb(255,255,255)",
+      "label": "rgb(179,228,255)",
+      "headerLogo": "ms-appx:///passImages/pass-2-logo.png",
+      "headerLogoWidth": 35,
+      "headerLogoHeight": 29,
+      "organizationName": "Skyport Airways",
+      "description": "*Boarding Pass",
+      "headerLogoText": "Skyport Airways",
+      "headerLabel": "GATE",
+      "headerValue": "23"
+    },
+    {
+      "ID": "8ca62385ca73bbc8baec06f4e1cefbaf36dcd6d1",
+      "type": "generic",
+      "background": "rgb(100,175,72)",
+      "foreground": "rgb(255,255,255)",
+      "label": "rgb(255,255,255)",
+      "headerLogo": "ms-appx:///passImages/pass-3-logo.png",
+      "headerLogoWidth": 103,
+      "headerLogoHeight": 30,
+      "organizationName": "Subway",
+      "description": "Subway Rewards Card",
+      "headerLogoText": "",
+      "headerLabel": "POINTS",
+      "headerValue": "2356"
+    },
+    {
+      "ID": "1127b29dbe3578218685f4ddaaba5afabe8486bc",
+      "type": "eventTicket",
+      "background": "rgb(60,65,76)",
+      "foreground": "rgb(238,26,46)",
+      "label": "rgb(238,26,46)",
+      "headerLogo": "ms-appx:///passImages/pass-4-logo.png",
+      "headerLogoWidth": 185,
+      "headerLogoHeight": 100,
+      "organizationName": "Six Flags",
+      "description": "Six Flags Ticket",
+      "headerLogoText": "",
+      "headerLabel": "",
+      "headerValue": ""
+    }
+  ]
+}

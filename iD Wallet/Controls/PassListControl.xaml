@@ -1,0 +1,36 @@
+﻿<UserControl
+    x:Class="iD_Wallet.Controls.PassListControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:iD_Wallet.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="600"
+    d:DesignWidth="350" ScrollViewer.VerticalScrollBarVisibility="Auto" Loading="UserControl_Loading">
+    <Grid>
+        <ListView x:Name="passListView" Foreground="#FFB9B9B9" IsMultiSelectCheckBoxEnabled="False" SelectionMode="None" ScrollViewer.VerticalScrollBarVisibility="Hidden" IsTabStop="False">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Background="{Binding backgroundColor}" Height="70" Tapped="Grid_Tapped">
+                        <Image Width="{Binding headerLogoWidth}" Height="60" HorizontalAlignment="Left" Margin="10,5,0,5" Stretch="Uniform" Source="{Binding headerLogo}" />
+                        <TextBlock Text="{Binding headerName}" FontSize="25" Foreground="{Binding foregroundColor}" HorizontalAlignment="Left" Height="40" Margin="{Binding headerNameMargin}" TextAlignment="Center" LineHeight="25"/>
+                        <TextBlock x:Name="lbl" Text="{Binding headerLabel}" FontSize="21" Foreground="{Binding labelColor}" HorizontalAlignment="Right" Margin="0,6,10,0" LineHeight="21"/>
+                        <TextBlock Text="{Binding headerValue}" FontSize="21" Foreground="{Binding foregroundColor}" HorizontalAlignment="Right" Margin="0,33,10,0" LineHeight="21"/>
+                        <TextBlock Text="{Binding secHeaderLabel}" FontSize="21" Foreground="{Binding labelColor}" HorizontalAlignment="Right" Margin="{Binding secHeaderLabelMargin}" LineHeight="21"/>
+                        <TextBlock Text="{Binding secHeaderValue}" FontSize="21" Foreground="{Binding foregroundColor}" HorizontalAlignment="Right" Margin="{Binding secHeaderValueMargin}" LineHeight="21"/>
+
+                    </Grid>                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="IsTabStop" Value="False"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                    <Setter Property="Padding" Value="0"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>        
+    </Grid>
+</UserControl>
